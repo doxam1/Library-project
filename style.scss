@@ -1,0 +1,39 @@
+body {
+    background-color: beige;
+}
+
+table, th, tr, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+::backdrop {
+    background-color: rgb(50, 42, 165);
+    opacity: 20%;
+}
+dialog {
+    /* width: 100%;
+    height: 100%; */
+}
+
+.newBookForm {
+    width: 100%;
+
+    & div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 8px;
+    }
+
+    & input {
+        // width: 130px;
+    }
+
+    
+}

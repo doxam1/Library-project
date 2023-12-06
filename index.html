@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libary Project odin </title>
+    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <h2> Hello Library </h2>
+    <div class='bookContainer'>
+        <table>
+            <thead>
+                <tr>
+                    <th>Author</th>
+                    <th>Title</th>
+                    <th>Pages</th>
+                    <th>Read?</th>
+                </tr>
+            </thead>
+            <tbody class="userEnterBooks">
+
+            </tbody>
+        </table>
+
+        <dialog class="addBookDialog">
+            <p>add book text - here i will add form</p>
+            <form class='newBookForm' action="">
+                <fieldset>
+                    <legend>New Book</legend>                    
+                    <div class="author">
+                        <lable for="author">Author</lable>
+                        <input type="text" placeholder="Author" id="author" name="author" class="author"/>
+                    </div>
+                    <div class="Title">
+                        <label for="title"> Title </label>
+                        <input type="text" id="title" name="title" placeholder="Title"/>
+                    </div>
+                    <div class="pages">
+                        <label for="pages"> How Many Pages? </label>
+                        <input type="tel" id="pages" class="pages" name="pages" placeholder="how many pages?" />
+                    </div>
+                    <div class="read">
+                        <label for="read"> did you read it? </label>
+                        <input id="read" name="read" class="read" placeholder="yes/no" />
+                    </div>
+                    <button class="AddBookBtn"> Add Book </button>
+                </fieldset>
+            </form>
+        </dialog>
+        <button type='button' class="openModalDialog">Add Book</button>
+    </div>
+    
+</body>
+</html>

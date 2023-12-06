@@ -1,0 +1,1 @@
+body{background-color:beige}table,th,tr,td{border:1px solid #000;text-align:center;padding:10px}table{width:100%}::backdrop{background-color:#322aa5;opacity:20%}.newBookForm{width:100%}.newBookForm div{display:flex;flex-direction:column;justify-content:space-between;padding:8px}
