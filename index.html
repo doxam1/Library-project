@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-    <h2> Hello Library </h2>
     <div class='bookContainer'>
         <table>
             <thead>
                 <tr>
+                    <th></th>
                     <th>Author</th>
                     <th>Title</th>
                     <th>Pages</th>
@@ -23,9 +23,9 @@
 
             </tbody>
         </table>
+    </div>
 
         <dialog class="addBookDialog">
-            <p>add book text - here i will add form</p>
             <form class='newBookForm' action="">
                 <fieldset>
                     <legend>New Book</legend>                    
@@ -42,15 +42,25 @@
                         <input type="tel" id="pages" class="pages" name="pages" placeholder="how many pages?" />
                     </div>
                     <div class="read">
-                        <label for="read"> did you read it? </label>
-                        <input id="read" name="read" class="read" placeholder="yes/no" />
+                        <fieldset>
+                            <legend> Did you Read it? </legend>
+                            <label for="yesRead"> Yes </label>
+                            <input type="radio" name="read" id="yesRead" value="yes" checked/>
+                            <label for="noRead"> No </label>
+                            <input type="radio" id="noRead" value="no" name="read" />
+                        </fieldset>
                     </div>
                     <button class="AddBookBtn"> Add Book </button>
+                    <button class="closeAddBookModal"> CLOSE </button>
                 </fieldset>
             </form>
         </dialog>
-        <button type='button' class="openModalDialog">Add Book</button>
-    </div>
+        <div class="menuSideBar">
+            <button type='button' class="openModalDialog">Add Book</button>
+            <h2> My Library </h2>
+
+        </div>
+    
     
 </body>
 </html>
